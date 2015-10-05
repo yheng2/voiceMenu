@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DAE1BC1A0DD0088F215 /* main.m */; };
+		C3FD3DB21BC1A0DD0088F215 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DB11BC1A0DD0088F215 /* AppDelegate.m */; };
+		C3FD3DB81BC1A0DD0088F215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FD3DB61BC1A0DD0088F215 /* Main.storyboard */; };
+		C3FD3DBA1BC1A0DD0088F215 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FD3DB91BC1A0DD0088F215 /* Images.xcassets */; };
+		C3FD3DBD1BC1A0DD0088F215 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3FD3DBB1BC1A0DD0088F215 /* LaunchScreen.xib */; };
+		C3FD3DC91BC1A0DD0088F215 /* AudioMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DC81BC1A0DD0088F215 /* AudioMenuTests.m */; };
+		C3FD3DE21BC1A1F00088F215 /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DD41BC1A1F00088F215 /* AMSlideMenuContentSegue.m */; };
+		C3FD3DE31BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DD61BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.m */; };
+		C3FD3DE41BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DD81BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.m */; };
+		C3FD3DE51BC1A1F00088F215 /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DDA1BC1A1F00088F215 /* AMSlideMenuMainViewController.m */; };
+		C3FD3DE61BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DDD1BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m */; };
+		C3FD3DE71BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DDF1BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m */; };
+		C3FD3DE81BC1A1F00088F215 /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DE11BC1A1F00088F215 /* UIViewController+AMSlideMenu.m */; };
+		C3FD3DEB1BC1A4150088F215 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DEA1BC1A4150088F215 /* MainVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3FD3DC31BC1A0DD0088F215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3FD3DA11BC1A0DD0088F215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3FD3DA81BC1A0DD0088F215;
+			remoteInfo = AudioMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3FD3DA91BC1A0DD0088F215 /* AudioMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FD3DAD1BC1A0DD0088F215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FD3DAE1BC1A0DD0088F215 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3FD3DB01BC1A0DD0088F215 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3FD3DB11BC1A0DD0088F215 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3FD3DB71BC1A0DD0088F215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3FD3DB91BC1A0DD0088F215 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3FD3DBC1BC1A0DD0088F215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C3FD3DC21BC1A0DD0088F215 /* AudioMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3FD3DC71BC1A0DD0088F215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3FD3DC81BC1A0DD0088F215 /* AudioMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioMenuTests.m; sourceTree = "<group>"; };
+		C3FD3DD31BC1A1F00088F215 /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
+		C3FD3DD41BC1A1F00088F215 /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
+		C3FD3DD51BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		C3FD3DD61BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
+		C3FD3DD71BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
+		C3FD3DD81BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
+		C3FD3DD91BC1A1F00088F215 /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
+		C3FD3DDA1BC1A1F00088F215 /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
+		C3FD3DDB1BC1A1F00088F215 /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuProtocols.h; sourceTree = "<group>"; };
+		C3FD3DDC1BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
+		C3FD3DDD1BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
+		C3FD3DDE1BC1A1F00088F215 /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		C3FD3DDF1BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
+		C3FD3DE01BC1A1F00088F215 /* UIViewController+AMSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AMSlideMenu.h"; sourceTree = "<group>"; };
+		C3FD3DE11BC1A1F00088F215 /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
+		C3FD3DE91BC1A4150088F215 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		C3FD3DEA1BC1A4150088F215 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3FD3DA61BC1A0DD0088F215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FD3DBF1BC1A0DD0088F215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3FD3DA01BC1A0DD0088F215 = {
+			isa = PBXGroup;
+			children = (
+				C3FD3DAB1BC1A0DD0088F215 /* AudioMenu */,
+				C3FD3DC51BC1A0DD0088F215 /* AudioMenuTests */,
+				C3FD3DAA1BC1A0DD0088F215 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3FD3DAA1BC1A0DD0088F215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD3DA91BC1A0DD0088F215 /* AudioMenu.app */,
+				C3FD3DC21BC1A0DD0088F215 /* AudioMenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3FD3DAB1BC1A0DD0088F215 /* AudioMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD3DD21BC1A1F00088F215 /* AMSlideMenu */,
+				C3FD3DB01BC1A0DD0088F215 /* AppDelegate.h */,
+				C3FD3DB11BC1A0DD0088F215 /* AppDelegate.m */,
+				C3FD3DE91BC1A4150088F215 /* MainVC.h */,
+				C3FD3DEA1BC1A4150088F215 /* MainVC.m */,
+				C3FD3DB91BC1A0DD0088F215 /* Images.xcassets */,
+				C3FD3DBB1BC1A0DD0088F215 /* LaunchScreen.xib */,
+				C3FD3DAC1BC1A0DD0088F215 /* Supporting Files */,
+			);
+			path = AudioMenu;
+			sourceTree = "<group>";
+		};
+		C3FD3DAC1BC1A0DD0088F215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD3DB61BC1A0DD0088F215 /* Main.storyboard */,
+				C3FD3DAD1BC1A0DD0088F215 /* Info.plist */,
+				C3FD3DAE1BC1A0DD0088F215 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3FD3DC51BC1A0DD0088F215 /* AudioMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD3DC81BC1A0DD0088F215 /* AudioMenuTests.m */,
+				C3FD3DC61BC1A0DD0088F215 /* Supporting Files */,
+			);
+			path = AudioMenuTests;
+			sourceTree = "<group>";
+		};
+		C3FD3DC61BC1A0DD0088F215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD3DC71BC1A0DD0088F215 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3FD3DD21BC1A1F00088F215 /* AMSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD3DD31BC1A1F00088F215 /* AMSlideMenuContentSegue.h */,
+				C3FD3DD41BC1A1F00088F215 /* AMSlideMenuContentSegue.m */,
+				C3FD3DD51BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.h */,
+				C3FD3DD61BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.m */,
+				C3FD3DD71BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.h */,
+				C3FD3DD81BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.m */,
+				C3FD3DD91BC1A1F00088F215 /* AMSlideMenuMainViewController.h */,
+				C3FD3DDA1BC1A1F00088F215 /* AMSlideMenuMainViewController.m */,
+				C3FD3DDB1BC1A1F00088F215 /* AMSlideMenuProtocols.h */,
+				C3FD3DDC1BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.h */,
+				C3FD3DDD1BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m */,
+				C3FD3DDE1BC1A1F00088F215 /* AMSlideMenuRightTableViewController.h */,
+				C3FD3DDF1BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m */,
+				C3FD3DE01BC1A1F00088F215 /* UIViewController+AMSlideMenu.h */,
+				C3FD3DE11BC1A1F00088F215 /* UIViewController+AMSlideMenu.m */,
+			);
+			path = AMSlideMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3FD3DA81BC1A0DD0088F215 /* AudioMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FD3DCC1BC1A0DD0088F215 /* Build configuration list for PBXNativeTarget "AudioMenu" */;
+			buildPhases = (
+				C3FD3DA51BC1A0DD0088F215 /* Sources */,
+				C3FD3DA61BC1A0DD0088F215 /* Frameworks */,
+				C3FD3DA71BC1A0DD0088F215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioMenu;
+			productName = AudioMenu;
+			productReference = C3FD3DA91BC1A0DD0088F215 /* AudioMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3FD3DC11BC1A0DD0088F215 /* AudioMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3FD3DCF1BC1A0DD0088F215 /* Build configuration list for PBXNativeTarget "AudioMenuTests" */;
+			buildPhases = (
+				C3FD3DBE1BC1A0DD0088F215 /* Sources */,
+				C3FD3DBF1BC1A0DD0088F215 /* Frameworks */,
+				C3FD3DC01BC1A0DD0088F215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3FD3DC41BC1A0DD0088F215 /* PBXTargetDependency */,
+			);
+			name = AudioMenuTests;
+			productName = AudioMenuTests;
+			productReference = C3FD3DC21BC1A0DD0088F215 /* AudioMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3FD3DA11BC1A0DD0088F215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Yiwei Heng";
+				TargetAttributes = {
+					C3FD3DA81BC1A0DD0088F215 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C3FD3DC11BC1A0DD0088F215 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C3FD3DA81BC1A0DD0088F215;
+					};
+				};
+			};
+			buildConfigurationList = C3FD3DA41BC1A0DD0088F215 /* Build configuration list for PBXProject "AudioMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3FD3DA01BC1A0DD0088F215;
+			productRefGroup = C3FD3DAA1BC1A0DD0088F215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3FD3DA81BC1A0DD0088F215 /* AudioMenu */,
+				C3FD3DC11BC1A0DD0088F215 /* AudioMenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3FD3DA71BC1A0DD0088F215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FD3DB81BC1A0DD0088F215 /* Main.storyboard in Resources */,
+				C3FD3DBD1BC1A0DD0088F215 /* LaunchScreen.xib in Resources */,
+				C3FD3DBA1BC1A0DD0088F215 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FD3DC01BC1A0DD0088F215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3FD3DA51BC1A0DD0088F215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FD3DE31BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.m in Sources */,
+				C3FD3DE71BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m in Sources */,
+				C3FD3DE21BC1A1F00088F215 /* AMSlideMenuContentSegue.m in Sources */,
+				C3FD3DEB1BC1A4150088F215 /* MainVC.m in Sources */,
+				C3FD3DE81BC1A1F00088F215 /* UIViewController+AMSlideMenu.m in Sources */,
+				C3FD3DE41BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.m in Sources */,
+				C3FD3DB21BC1A0DD0088F215 /* AppDelegate.m in Sources */,
+				C3FD3DE51BC1A1F00088F215 /* AMSlideMenuMainViewController.m in Sources */,
+				C3FD3DE61BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m in Sources */,
+				C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FD3DBE1BC1A0DD0088F215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FD3DC91BC1A0DD0088F215 /* AudioMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3FD3DC41BC1A0DD0088F215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3FD3DA81BC1A0DD0088F215 /* AudioMenu */;
+			targetProxy = C3FD3DC31BC1A0DD0088F215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3FD3DB61BC1A0DD0088F215 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3FD3DB71BC1A0DD0088F215 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3FD3DBB1BC1A0DD0088F215 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3FD3DBC1BC1A0DD0088F215 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3FD3DCA1BC1A0DD0088F215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3FD3DCB1BC1A0DD0088F215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3FD3DCD1BC1A0DD0088F215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3FD3DCE1BC1A0DD0088F215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3FD3DD01BC1A0DD0088F215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudioMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioMenu.app/AudioMenu";
+			};
+			name = Debug;
+		};
+		C3FD3DD11BC1A0DD0088F215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudioMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioMenu.app/AudioMenu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3FD3DA41BC1A0DD0088F215 /* Build configuration list for PBXProject "AudioMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FD3DCA1BC1A0DD0088F215 /* Debug */,
+				C3FD3DCB1BC1A0DD0088F215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3FD3DCC1BC1A0DD0088F215 /* Build configuration list for PBXNativeTarget "AudioMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FD3DCD1BC1A0DD0088F215 /* Debug */,
+				C3FD3DCE1BC1A0DD0088F215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3FD3DCF1BC1A0DD0088F215 /* Build configuration list for PBXNativeTarget "AudioMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3FD3DD01BC1A0DD0088F215 /* Debug */,
+				C3FD3DD11BC1A0DD0088F215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3FD3DA11BC1A0DD0088F215 /* Project object */;
+}
