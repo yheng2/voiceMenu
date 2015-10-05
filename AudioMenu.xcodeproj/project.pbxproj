@@ -21,6 +21,8 @@
 		C3FD3DE71BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DDF1BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m */; };
 		C3FD3DE81BC1A1F00088F215 /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DE11BC1A1F00088F215 /* UIViewController+AMSlideMenu.m */; };
 		C3FD3DEB1BC1A4150088F215 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DEA1BC1A4150088F215 /* MainVC.m */; };
+		C3FD3DF61BC21D3F0088F215 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DF51BC21D3F0088F215 /* InputView.m */; };
+		C3FD3DF81BC21E470088F215 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FD3DF71BC21E470088F215 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		C3FD3DE11BC1A1F00088F215 /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
 		C3FD3DE91BC1A4150088F215 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
 		C3FD3DEA1BC1A4150088F215 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		C3FD3DF41BC21D3F0088F215 /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		C3FD3DF51BC21D3F0088F215 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		C3FD3DF71BC21E470088F215 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FD3DF81BC21E470088F215 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 		C3FD3DA01BC1A0DD0088F215 = {
 			isa = PBXGroup;
 			children = (
+				C3FD3DF71BC21E470088F215 /* AVFoundation.framework */,
 				C3FD3DAB1BC1A0DD0088F215 /* AudioMenu */,
 				C3FD3DC51BC1A0DD0088F215 /* AudioMenuTests */,
 				C3FD3DAA1BC1A0DD0088F215 /* Products */,
@@ -108,6 +115,8 @@
 				C3FD3DB11BC1A0DD0088F215 /* AppDelegate.m */,
 				C3FD3DE91BC1A4150088F215 /* MainVC.h */,
 				C3FD3DEA1BC1A4150088F215 /* MainVC.m */,
+				C3FD3DF41BC21D3F0088F215 /* InputView.h */,
+				C3FD3DF51BC21D3F0088F215 /* InputView.m */,
 				C3FD3DB91BC1A0DD0088F215 /* Images.xcassets */,
 				C3FD3DBB1BC1A0DD0088F215 /* LaunchScreen.xib */,
 				C3FD3DAC1BC1A0DD0088F215 /* Supporting Files */,
@@ -274,6 +283,7 @@
 				C3FD3DE51BC1A1F00088F215 /* AMSlideMenuMainViewController.m in Sources */,
 				C3FD3DE61BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */,
+				C3FD3DF61BC21D3F0088F215 /* InputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +480,7 @@
 				C3FD3DCE1BC1A0DD0088F215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3FD3DCF1BC1A0DD0088F215 /* Build configuration list for PBXNativeTarget "AudioMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +489,7 @@
 				C3FD3DD11BC1A0DD0088F215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
