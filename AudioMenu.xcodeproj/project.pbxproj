@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ABBABF640B0937BF16BFE70 /* libPods-AudioMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 488E02C2669DF7078A0EB618 /* libPods-AudioMenu.a */; };
+		A568855A1BCB28E700DE719D /* homeResultPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A56885591BCB28E700DE719D /* homeResultPage.m */; settings = {ASSET_TAGS = (); }; };
+		A568855C1BCB4A5C00DE719D /* mic_talk_358x358.png in Resources */ = {isa = PBXBuildFile; fileRef = A568855B1BCB4A5B00DE719D /* mic_talk_358x358.png */; settings = {ASSET_TAGS = (); }; };
+		A568855E1BCB593900DE719D /* mic_normal_358x358.png in Resources */ = {isa = PBXBuildFile; fileRef = A568855D1BCB593900DE719D /* mic_normal_358x358.png */; settings = {ASSET_TAGS = (); }; };
+		A569403B1BCB254900E6F762 /* home.m in Sources */ = {isa = PBXBuildFile; fileRef = A569403A1BCB254900E6F762 /* home.m */; settings = {ASSET_TAGS = (); }; };
 		C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DAE1BC1A0DD0088F215 /* main.m */; };
 		C3FD3DB21BC1A0DD0088F215 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DB11BC1A0DD0088F215 /* AppDelegate.m */; };
 		C3FD3DB81BC1A0DD0088F215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FD3DB61BC1A0DD0088F215 /* Main.storyboard */; };
@@ -36,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		488E02C2669DF7078A0EB618 /* libPods-AudioMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7305C2CECEBCB8EE89D611 /* Pods-AudioMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMenu/Pods-AudioMenu.release.xcconfig"; sourceTree = "<group>"; };
+		A56885581BCB28E700DE719D /* homeResultPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeResultPage.h; sourceTree = "<group>"; };
+		A56885591BCB28E700DE719D /* homeResultPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeResultPage.m; sourceTree = "<group>"; };
+		A568855B1BCB4A5B00DE719D /* mic_talk_358x358.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_talk_358x358.png; sourceTree = SOURCE_ROOT; };
+		A568855D1BCB593900DE719D /* mic_normal_358x358.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_normal_358x358.png; sourceTree = SOURCE_ROOT; };
+		A56940391BCB254900E6F762 /* home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = home.h; sourceTree = "<group>"; };
+		A569403A1BCB254900E6F762 /* home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = home.m; sourceTree = "<group>"; };
 		C3FD3DA91BC1A0DD0088F215 /* AudioMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FD3DAD1BC1A0DD0088F215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FD3DAE1BC1A0DD0088F215 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +80,7 @@
 		C3FD3DF41BC21D3F0088F215 /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
 		C3FD3DF51BC21D3F0088F215 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 		C3FD3DF71BC21E470088F215 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD8A298FAEE09226C0551787 /* Pods-AudioMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMenu/Pods-AudioMenu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3FD3DF81BC21E470088F215 /* AVFoundation.framework in Frameworks */,
+				4ABBABF640B0937BF16BFE70 /* libPods-AudioMenu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		136D2FBA786FFEF78347E579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				488E02C2669DF7078A0EB618 /* libPods-AudioMenu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3FD3DA01BC1A0DD0088F215 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +118,8 @@
 				C3FD3DAB1BC1A0DD0088F215 /* AudioMenu */,
 				C3FD3DC51BC1A0DD0088F215 /* AudioMenuTests */,
 				C3FD3DAA1BC1A0DD0088F215 /* Products */,
+				C64AFBC695CBF1C9BE5137D8 /* Pods */,
+				136D2FBA786FFEF78347E579 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +142,12 @@
 				C3FD3DEA1BC1A4150088F215 /* MainVC.m */,
 				C3FD3DF41BC21D3F0088F215 /* InputView.h */,
 				C3FD3DF51BC21D3F0088F215 /* InputView.m */,
+				A56940391BCB254900E6F762 /* home.h */,
+				A569403A1BCB254900E6F762 /* home.m */,
+				A56885581BCB28E700DE719D /* homeResultPage.h */,
+				A56885591BCB28E700DE719D /* homeResultPage.m */,
+				A568855D1BCB593900DE719D /* mic_normal_358x358.png */,
+				A568855B1BCB4A5B00DE719D /* mic_talk_358x358.png */,
 				C3FD3DB91BC1A0DD0088F215 /* Images.xcassets */,
 				C3FD3DBB1BC1A0DD0088F215 /* LaunchScreen.xib */,
 				C3FD3DAC1BC1A0DD0088F215 /* Supporting Files */,
@@ -173,6 +204,15 @@
 			path = AMSlideMenu;
 			sourceTree = "<group>";
 		};
+		C64AFBC695CBF1C9BE5137D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD8A298FAEE09226C0551787 /* Pods-AudioMenu.debug.xcconfig */,
+				4F7305C2CECEBCB8EE89D611 /* Pods-AudioMenu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3FD3DCC1BC1A0DD0088F215 /* Build configuration list for PBXNativeTarget "AudioMenu" */;
 			buildPhases = (
+				74B029505F8CE2CEE59B23F2 /* Check Pods Manifest.lock */,
 				C3FD3DA51BC1A0DD0088F215 /* Sources */,
 				C3FD3DA61BC1A0DD0088F215 /* Frameworks */,
 				C3FD3DA71BC1A0DD0088F215 /* Resources */,
+				36C1CF87B87C1EB73A6DEF43 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,7 +297,9 @@
 			files = (
 				C3FD3DB81BC1A0DD0088F215 /* Main.storyboard in Resources */,
 				C3FD3DBD1BC1A0DD0088F215 /* LaunchScreen.xib in Resources */,
+				A568855E1BCB593900DE719D /* mic_normal_358x358.png in Resources */,
 				C3FD3DBA1BC1A0DD0088F215 /* Images.xcassets in Resources */,
+				A568855C1BCB4A5C00DE719D /* mic_talk_358x358.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,12 +312,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36C1CF87B87C1EB73A6DEF43 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioMenu/Pods-AudioMenu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B029505F8CE2CEE59B23F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3FD3DA51BC1A0DD0088F215 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C3FD3DE31BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.m in Sources */,
+				A568855A1BCB28E700DE719D /* homeResultPage.m in Sources */,
 				C3FD3DE71BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m in Sources */,
 				C3FD3DE21BC1A1F00088F215 /* AMSlideMenuContentSegue.m in Sources */,
 				C3FD3DEB1BC1A4150088F215 /* MainVC.m in Sources */,
@@ -283,6 +361,7 @@
 				C3FD3DE51BC1A1F00088F215 /* AMSlideMenuMainViewController.m in Sources */,
 				C3FD3DE61BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */,
+				A569403B1BCB254900E6F762 /* home.m in Sources */,
 				C3FD3DF61BC21D3F0088F215 /* InputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,8 +488,10 @@
 		};
 		C3FD3DCD1BC1A0DD0088F215 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8A298FAEE09226C0551787 /* Pods-AudioMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AudioMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -419,8 +500,10 @@
 		};
 		C3FD3DCE1BC1A0DD0088F215 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7305C2CECEBCB8EE89D611 /* Pods-AudioMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AudioMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +525,7 @@
 				INFOPLIST_FILE = AudioMenuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioMenu.app/AudioMenu";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -457,7 +540,7 @@
 				INFOPLIST_FILE = AudioMenuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioMenu.app/AudioMenu";
+				TEST_HOST = "";
 			};
 			name = Release;
 		};

@@ -1,0 +1,1 @@
+APIAI_OTHER_LDFLAGS = -weak_library /usr/lib/libc++.dylib -framework "AudioToolbox" -framework "Foundation" -framework "UIKit"

@@ -1,0 +1,29 @@
+PODS:
+  - ApiAI/AudioFileConverter (0.3.7):
+    - ApiAI/Core
+  - ApiAI/Core (0.3.7)
+  - ApiAI/ResponseMapping (0.3.7):
+    - ApiAI/Core (~> 1.1.0)
+  - ApiAI/UIKit (0.3.7):
+    - ApiAI/Core
+    - ApiAI/VoiceRequest
+  - ApiAI/VoiceFileRequest (0.3.7):
+    - ApiAI/Core
+  - ApiAI/VoiceRequest (0.3.7):
+    - ApiAI/Core
+  - MBProgressHUD (0.9.1)
+
+DEPENDENCIES:
+  - ApiAI/AudioFileConverter
+  - ApiAI/Core
+  - ApiAI/ResponseMapping
+  - ApiAI/UIKit
+  - ApiAI/VoiceFileRequest
+  - ApiAI/VoiceRequest
+  - MBProgressHUD
+
+SPEC CHECKSUMS:
+  ApiAI: 7d7ea5e4a40ad29809c51d8ce95e034b81ab350a
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+
+COCOAPODS: 0.38.2
