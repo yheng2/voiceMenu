@@ -11,5 +11,5 @@
 @interface homeResultPage : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property(nonatomic, copy) id response;
-
+@property int choose;
 @end

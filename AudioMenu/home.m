@@ -83,6 +83,7 @@
         
         homeResultPage *nextController=[self.storyboard instantiateViewControllerWithIdentifier:@"homeResult"];
         nextController.response=response;
+        nextController.choose=1;
         [self.navigationController pushViewController:nextController animated:YES];
         
         //[self.textView setText:[response description]];
@@ -110,6 +111,7 @@
 
 
 - (IBAction)startButton:(id)sender {
+    //[MBProgressHUD showHUDAddedTo:self.view animated:YES];
     if(! self.isStarted)
     {
         
@@ -126,9 +128,11 @@
  
             NSLog(@"success");
             
+            [MBProgressHUD hideHUDForView:selfStrong.view animated:YES];
             //_textView.text = [response description];
             homeResultPage *nextController=[self.storyboard instantiateViewControllerWithIdentifier:@"homeResult"];
             nextController.response=response;
+            nextController.choose=0;
             [self.navigationController pushViewController:nextController animated:YES];
             
             
@@ -139,6 +143,8 @@
             [self changeStateToStop];
         } failure:^(AIRequest *request, NSError *error) {
             __strong typeof(selfWeak) selfStrong = selfWeak;
+            
+            [MBProgressHUD hideHUDForView:selfStrong.view animated:YES];
             
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error"
                                                                 message:[error localizedDescription]
@@ -182,8 +188,7 @@
 - (void)changeStateToStop
 {
     
-//    UIImageView *micNormalImageView = [UIImage imageNamed:@"mic_normal_358x358.png"];
-//    [self.recordImage setImage:micNormalImageView];
+
     [self.startStatus setImage:[UIImage imageNamed:@"mic_normal_358x358.png"] forState:0];
     
     

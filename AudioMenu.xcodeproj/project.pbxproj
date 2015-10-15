@@ -12,6 +12,11 @@
 		A568855C1BCB4A5C00DE719D /* mic_talk_358x358.png in Resources */ = {isa = PBXBuildFile; fileRef = A568855B1BCB4A5B00DE719D /* mic_talk_358x358.png */; settings = {ASSET_TAGS = (); }; };
 		A568855E1BCB593900DE719D /* mic_normal_358x358.png in Resources */ = {isa = PBXBuildFile; fileRef = A568855D1BCB593900DE719D /* mic_normal_358x358.png */; settings = {ASSET_TAGS = (); }; };
 		A569403B1BCB254900E6F762 /* home.m in Sources */ = {isa = PBXBuildFile; fileRef = A569403A1BCB254900E6F762 /* home.m */; settings = {ASSET_TAGS = (); }; };
+		A56EC9F91BCEFF330037FBCD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56EC9F81BCEFF330037FBCD /* CoreData.framework */; };
+		A56EC9FC1BCF01360037FBCD /* voiceStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A56EC9FA1BCF01360037FBCD /* voiceStore.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		A56ECA011BCF050E0037FBCD /* Voice+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A56EC9FE1BCF050E0037FBCD /* Voice+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		A56ECA021BCF050E0037FBCD /* Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = A56ECA001BCF050E0037FBCD /* Voice.m */; settings = {ASSET_TAGS = (); }; };
+		A56ECA051BCF19460037FBCD /* libraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56ECA041BCF19460037FBCD /* libraryController.m */; settings = {ASSET_TAGS = (); }; };
 		C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DAE1BC1A0DD0088F215 /* main.m */; };
 		C3FD3DB21BC1A0DD0088F215 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FD3DB11BC1A0DD0088F215 /* AppDelegate.m */; };
 		C3FD3DB81BC1A0DD0088F215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FD3DB61BC1A0DD0088F215 /* Main.storyboard */; };
@@ -49,6 +54,14 @@
 		A568855D1BCB593900DE719D /* mic_normal_358x358.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_normal_358x358.png; sourceTree = SOURCE_ROOT; };
 		A56940391BCB254900E6F762 /* home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = home.h; sourceTree = "<group>"; };
 		A569403A1BCB254900E6F762 /* home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = home.m; sourceTree = "<group>"; };
+		A56EC9F81BCEFF330037FBCD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A56EC9FB1BCF01360037FBCD /* voiceStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = voiceStore.xcdatamodel; sourceTree = "<group>"; };
+		A56EC9FD1BCF050E0037FBCD /* Voice+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Voice+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A56EC9FE1BCF050E0037FBCD /* Voice+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Voice+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A56EC9FF1BCF050E0037FBCD /* Voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice.h; sourceTree = "<group>"; };
+		A56ECA001BCF050E0037FBCD /* Voice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice.m; sourceTree = "<group>"; };
+		A56ECA031BCF19460037FBCD /* libraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libraryController.h; sourceTree = "<group>"; };
+		A56ECA041BCF19460037FBCD /* libraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libraryController.m; sourceTree = "<group>"; };
 		C3FD3DA91BC1A0DD0088F215 /* AudioMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FD3DAD1BC1A0DD0088F215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FD3DAE1BC1A0DD0088F215 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56EC9F91BCEFF330037FBCD /* CoreData.framework in Frameworks */,
 				C3FD3DF81BC21E470088F215 /* AVFoundation.framework in Frameworks */,
 				4ABBABF640B0937BF16BFE70 /* libPods-AudioMenu.a in Frameworks */,
 			);
@@ -106,6 +120,11 @@
 		136D2FBA786FFEF78347E579 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A56EC9FD1BCF050E0037FBCD /* Voice+CoreDataProperties.h */,
+				A56EC9FE1BCF050E0037FBCD /* Voice+CoreDataProperties.m */,
+				A56EC9FF1BCF050E0037FBCD /* Voice.h */,
+				A56ECA001BCF050E0037FBCD /* Voice.m */,
+				A56EC9F81BCEFF330037FBCD /* CoreData.framework */,
 				488E02C2669DF7078A0EB618 /* libPods-AudioMenu.a */,
 			);
 			name = Frameworks;
@@ -146,10 +165,13 @@
 				A569403A1BCB254900E6F762 /* home.m */,
 				A56885581BCB28E700DE719D /* homeResultPage.h */,
 				A56885591BCB28E700DE719D /* homeResultPage.m */,
+				A56ECA031BCF19460037FBCD /* libraryController.h */,
+				A56ECA041BCF19460037FBCD /* libraryController.m */,
 				A568855D1BCB593900DE719D /* mic_normal_358x358.png */,
 				A568855B1BCB4A5B00DE719D /* mic_talk_358x358.png */,
 				C3FD3DB91BC1A0DD0088F215 /* Images.xcassets */,
 				C3FD3DBB1BC1A0DD0088F215 /* LaunchScreen.xib */,
+				A56EC9FA1BCF01360037FBCD /* voiceStore.xcdatamodeld */,
 				C3FD3DAC1BC1A0DD0088F215 /* Supporting Files */,
 			);
 			path = AudioMenu;
@@ -352,16 +374,20 @@
 			files = (
 				C3FD3DE31BC1A1F00088F215 /* AMSlideMenuLeftMenuSegue.m in Sources */,
 				A568855A1BCB28E700DE719D /* homeResultPage.m in Sources */,
+				A56ECA051BCF19460037FBCD /* libraryController.m in Sources */,
 				C3FD3DE71BC1A1F00088F215 /* AMSlideMenuRightTableViewController.m in Sources */,
 				C3FD3DE21BC1A1F00088F215 /* AMSlideMenuContentSegue.m in Sources */,
 				C3FD3DEB1BC1A4150088F215 /* MainVC.m in Sources */,
 				C3FD3DE81BC1A1F00088F215 /* UIViewController+AMSlideMenu.m in Sources */,
 				C3FD3DE41BC1A1F00088F215 /* AMSlideMenuLeftTableViewController.m in Sources */,
+				A56ECA011BCF050E0037FBCD /* Voice+CoreDataProperties.m in Sources */,
+				A56ECA021BCF050E0037FBCD /* Voice.m in Sources */,
 				C3FD3DB21BC1A0DD0088F215 /* AppDelegate.m in Sources */,
 				C3FD3DE51BC1A1F00088F215 /* AMSlideMenuMainViewController.m in Sources */,
 				C3FD3DE61BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */,
 				A569403B1BCB254900E6F762 /* home.m in Sources */,
+				A56EC9FC1BCF01360037FBCD /* voiceStore.xcdatamodeld in Sources */,
 				C3FD3DF61BC21D3F0088F215 /* InputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +601,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A56EC9FA1BCF01360037FBCD /* voiceStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A56EC9FB1BCF01360037FBCD /* voiceStore.xcdatamodel */,
+			);
+			currentVersion = A56EC9FB1BCF01360037FBCD /* voiceStore.xcdatamodel */;
+			path = voiceStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C3FD3DA11BC1A0DD0088F215 /* Project object */;
 }

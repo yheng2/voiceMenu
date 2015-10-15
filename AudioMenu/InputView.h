@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "AppDelegate.h"
 
 @interface InputView : UIViewController <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 
@@ -15,7 +16,11 @@
 @property AVAudioRecorder *recorder;
 @property AVAudioPlayer *player;
 
+@property (weak, nonatomic) IBOutlet UITextField *inputText;
 
+- (IBAction)okTapped:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *inputLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *recordButton;
 
@@ -31,9 +36,12 @@
 
 - (IBAction)playTapped:(id)sender;
 
+- (IBAction)confirmTapped:(id)sender;
 
 
 
+@property NSManagedObjectContext* context;
+@property NSManagedObject* object;
 
 
 

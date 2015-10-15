@@ -7,8 +7,11 @@
 //
 
 #import "InputView.h"
+#import "Voice+CoreDataProperties.h"
 
 @interface InputView ()
+
+@property int i;
 
 @end
 
@@ -18,6 +21,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    AppDelegate *appDelegate=[[UIApplication sharedApplication] delegate];
+    self.context=[appDelegate managedObjectContext];
+    self.object=[NSEntityDescription insertNewObjectForEntityForName:@"Voice" inManagedObjectContext:self.context];
+    
+    
+    
     //Disable Stop/Play button when application launch
     [self.stopButton setEnabled:NO];
     [self.playButton setEnabled:NO];
@@ -25,11 +34,35 @@
     
     
     
+
+    
+    
+    
+    
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+
+- (IBAction)recordTapped:(id)sender {
+    NSFetchRequest *request=[[NSFetchRequest alloc] init];
+    [request setReturnsObjectsAsFaults:NO];
+    NSEntityDescription *entity=[NSEntityDescription entityForName:@"Voice" inManagedObjectContext:self.context];
+    request.entity=entity;
+    NSArray *array=[self.context executeFetchRequest:request error:nil];
+    //NSLog(@"%d",array.count);
+    self.i=array.count;
+    
+    
     // Set the audio file
+    
     NSArray *pathComponents = [NSArray arrayWithObjects:
-                               [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject],
-                               @"MyAudioMemo.m4a",
-                               nil];
+                               [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0],[NSString stringWithFormat:@"voice%d.m4a",self.i],nil];
     NSURL *outputFileURL = [NSURL fileURLWithPathComponents:pathComponents];
     
     // Setup audio session
@@ -50,27 +83,6 @@
     [self.recorder prepareToRecord];
 
     
-    
-    
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (IBAction)recordTapped:(id)sender {
     
     // Stop the audio player before recording
     if (self.player.playing) {
@@ -124,6 +136,14 @@
     
 }
 
+- (IBAction)confirmTapped:(id)sender {
+    Voice *voi=[NSEntityDescription insertNewObjectForEntityForName:@"Voice" inManagedObjectContext:self.context];
+    voi.text=self.inputLabel.text;
+    voi.nameNumber=[NSString stringWithFormat:@"%d",self.i];
+    NSError *error;
+    [self.context save:&error];
+}
+
 - (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Done"
                                                     message: @"Finish playing the recording!"
@@ -131,5 +151,10 @@
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
+}
+- (IBAction)okTapped:(id)sender {
+    self.inputLabel.text=self.inputText.text;
+    self.inputText.text=@"";
+    
 }
 @end

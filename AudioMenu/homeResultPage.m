@@ -10,6 +10,8 @@
 
 @interface homeResultPage ()
 
+
+
 @end
 
 @implementation homeResultPage
@@ -17,7 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.textView.text=[self.response description];
+    
+    NSDictionary *result = [self.response objectForKey:@"result"];
+    if (self.choose) {
+        
+        //NSString *action=[result objectForKey:@"action"];
+        NSDictionary *fulfillment=[result objectForKey:@"fulfillment"];
+        NSString *speech=[fulfillment objectForKey:@"speech"];
+        
+        self.textView.text=speech;
+    }
+    else {
+        self.textView.text=[result objectForKey:@"speech"];
+    }
+    
+    
+   // self.textView.text=[self.response description];
 }
 
 - (void)didReceiveMemoryWarning {
