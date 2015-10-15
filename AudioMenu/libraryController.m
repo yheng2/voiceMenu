@@ -106,6 +106,12 @@
     [self.player play];
 }
 
+- (IBAction)onBackgroungHit:(id)sender {
+    
+    
+    [self.searchText resignFirstResponder];
+}
+
 - (IBAction)searchButton:(id)sender {
     NSFetchRequest *request=[[NSFetchRequest alloc] init];
     [request setReturnsObjectsAsFaults:NO];

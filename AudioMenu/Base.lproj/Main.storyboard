@@ -326,7 +326,7 @@
                         <viewControllerLayoutGuide type="top" id="jgW-Rb-PVN"/>
                         <viewControllerLayoutGuide type="bottom" id="I3m-Nn-YGo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AzA-7l-Pkp">
+                    <view key="view" contentMode="scaleToFill" id="AzA-7l-Pkp" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -365,6 +365,9 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="onBackgroungHit:" destination="1mW-Kc-tQI" eventType="touchUpInside" id="MtR-EN-RrO"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="History" id="l0W-Nr-LYd"/>
                     <connections>
@@ -384,7 +387,7 @@
                         <viewControllerLayoutGuide type="top" id="T1k-sz-h01"/>
                         <viewControllerLayoutGuide type="bottom" id="5hV-vB-vHh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bEf-ak-XBV">
+                    <view key="view" contentMode="scaleToFill" id="bEf-ak-XBV" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -411,17 +414,8 @@
                                     <action selector="recordTapped:" destination="0xY-lf-fJV" eventType="touchUpInside" id="NuV-Ih-B9v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feH-q2-NlC">
-                                <rect key="frame" x="115" y="286" width="90" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Test Sound"/>
-                                <connections>
-                                    <action selector="playTapped:" destination="0xY-lf-fJV" eventType="touchUpInside" id="O3T-pu-RF1"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH2-9Z-Y4s">
-                                <rect key="frame" x="115" y="340" width="90" height="36"/>
+                                <rect key="frame" x="115" y="399" width="90" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Confirm"/>
@@ -446,12 +440,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feH-q2-NlC">
+                                <rect key="frame" x="115" y="307" width="90" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Test Sound"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="0xY-lf-fJV" eventType="touchUpInside" id="O3T-pu-RF1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="xo2-vr-GHI" secondAttribute="trailing" constant="55" id="JIg-1u-2a2"/>
                             <constraint firstItem="KIb-pU-AmQ" firstAttribute="leading" secondItem="bEf-ak-XBV" secondAttribute="leadingMargin" constant="30" id="lss-8a-XU4"/>
                         </constraints>
+                        <connections>
+                            <action selector="onBackgroungHit:" destination="0xY-lf-fJV" eventType="touchUpInside" id="pSM-sp-RXe"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Input" id="Ube-r2-1Dn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>

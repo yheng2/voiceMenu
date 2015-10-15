@@ -47,7 +47,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (IBAction)onBackgroungHit:(id)sender {
+    
+    
+    [self.inputText resignFirstResponder];
+}
 
 - (IBAction)recordTapped:(id)sender {
     NSFetchRequest *request=[[NSFetchRequest alloc] init];
