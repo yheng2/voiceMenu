@@ -23,7 +23,7 @@
     
     AppDelegate *appDelegate=[[UIApplication sharedApplication] delegate];
     self.context=[appDelegate managedObjectContext];
-    self.object=[NSEntityDescription insertNewObjectForEntityForName:@"Voice" inManagedObjectContext:self.context];
+    
     
     
     
@@ -47,6 +47,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+
+
 - (IBAction)onBackgroungHit:(id)sender {
     
     
@@ -60,7 +64,15 @@
     request.entity=entity;
     NSArray *array=[self.context executeFetchRequest:request error:nil];
     //NSLog(@"%d",array.count);
-    self.i=array.count;
+    self.i=1;
+    for (int x=0; x<array.count; x++) {
+        int y=[[array[x] valueForKey:@"nameNumber"] intValue];
+        if (self.i==y) {
+            self.i+=1;
+        }
+    }
+    NSLog(@"name number is %d",self.i);
+    
     
     
     // Set the audio file
@@ -141,6 +153,8 @@
 }
 
 - (IBAction)confirmTapped:(id)sender {
+
+    
     Voice *voi=[NSEntityDescription insertNewObjectForEntityForName:@"Voice" inManagedObjectContext:self.context];
     voi.text=self.inputLabel.text;
     voi.nameNumber=[NSString stringWithFormat:@"%d",self.i];

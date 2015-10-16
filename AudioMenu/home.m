@@ -49,8 +49,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(int)isFirstTime{
+    NSUserDefaults *theDefaults = [NSUserDefaults standardUserDefaults];
+    if([theDefaults integerForKey:@"hasRun"] == 0) {
+        [theDefaults setInteger:1 forKey:@"hasRun"];
+        [theDefaults synchronize];
+        return 0;
+    }
+    return 1;
+    
+}
 
-
+-(void)viewDidAppear:(BOOL)animated{
+    int result;
+    result=[self isFirstTime];
+    NSLog(@"licence: %d",result);
+    if (result==0) {
+        [self performSegueWithIdentifier:@"licenceSegue" sender:self];
+    }
+}
 - (IBAction)okButton:(id)sender {
     
     //[_textField resignFirstResponder];

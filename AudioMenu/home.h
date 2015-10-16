@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ApiAI/UIKit/AIVoiceRequestButton.h>
 
-@interface home : UIViewController
+@interface home : UIViewController<UITextFieldDelegate>
 - (IBAction)okButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 - (IBAction)startButton:(id)sender;

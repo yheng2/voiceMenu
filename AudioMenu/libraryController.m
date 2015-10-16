@@ -32,6 +32,7 @@
     requst.sortDescriptors=[NSArray arrayWithObject:sort];
     self.array=[NSMutableArray arrayWithArray:[self.context executeFetchRequest:requst error:nil]];
     self.cellCount=0;
+    NSLog(@"%@",self.array);
     
 }
 

@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "AppDelegate.h"
 
-@interface InputView : UIViewController <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
+@interface InputView : UIViewController <AVAudioRecorderDelegate, AVAudioPlayerDelegate,UITextFieldDelegate>
 
 
 @property AVAudioRecorder *recorder;

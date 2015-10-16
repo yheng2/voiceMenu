@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4ABBABF640B0937BF16BFE70 /* libPods-AudioMenu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 488E02C2669DF7078A0EB618 /* libPods-AudioMenu.a */; };
+		A566E8091BD0B9F8002D3187 /* Liscence.m in Sources */ = {isa = PBXBuildFile; fileRef = A566E8081BD0B9F8002D3187 /* Liscence.m */; settings = {ASSET_TAGS = (); }; };
 		A568855A1BCB28E700DE719D /* homeResultPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A56885591BCB28E700DE719D /* homeResultPage.m */; settings = {ASSET_TAGS = (); }; };
 		A568855C1BCB4A5C00DE719D /* mic_talk_358x358.png in Resources */ = {isa = PBXBuildFile; fileRef = A568855B1BCB4A5B00DE719D /* mic_talk_358x358.png */; settings = {ASSET_TAGS = (); }; };
 		A568855E1BCB593900DE719D /* mic_normal_358x358.png in Resources */ = {isa = PBXBuildFile; fileRef = A568855D1BCB593900DE719D /* mic_normal_358x358.png */; settings = {ASSET_TAGS = (); }; };
@@ -48,6 +49,8 @@
 /* Begin PBXFileReference section */
 		488E02C2669DF7078A0EB618 /* libPods-AudioMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7305C2CECEBCB8EE89D611 /* Pods-AudioMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioMenu/Pods-AudioMenu.release.xcconfig"; sourceTree = "<group>"; };
+		A566E8071BD0B9F8002D3187 /* Liscence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Liscence.h; path = AMSlideMenu/Liscence.h; sourceTree = "<group>"; };
+		A566E8081BD0B9F8002D3187 /* Liscence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Liscence.m; path = AMSlideMenu/Liscence.m; sourceTree = "<group>"; };
 		A56885581BCB28E700DE719D /* homeResultPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeResultPage.h; sourceTree = "<group>"; };
 		A56885591BCB28E700DE719D /* homeResultPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeResultPage.m; sourceTree = "<group>"; };
 		A568855B1BCB4A5B00DE719D /* mic_talk_358x358.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_talk_358x358.png; sourceTree = SOURCE_ROOT; };
@@ -157,6 +160,8 @@
 				C3FD3DD21BC1A1F00088F215 /* AMSlideMenu */,
 				C3FD3DB01BC1A0DD0088F215 /* AppDelegate.h */,
 				C3FD3DB11BC1A0DD0088F215 /* AppDelegate.m */,
+				A566E8071BD0B9F8002D3187 /* Liscence.h */,
+				A566E8081BD0B9F8002D3187 /* Liscence.m */,
 				C3FD3DE91BC1A4150088F215 /* MainVC.h */,
 				C3FD3DEA1BC1A4150088F215 /* MainVC.m */,
 				C3FD3DF41BC21D3F0088F215 /* InputView.h */,
@@ -387,6 +392,7 @@
 				C3FD3DE61BC1A1F00088F215 /* AMSlideMenuRightMenuSegue.m in Sources */,
 				C3FD3DAF1BC1A0DD0088F215 /* main.m in Sources */,
 				A569403B1BCB254900E6F762 /* home.m in Sources */,
+				A566E8091BD0B9F8002D3187 /* Liscence.m in Sources */,
 				A56EC9FC1BCF01360037FBCD /* voiceStore.xcdatamodeld in Sources */,
 				C3FD3DF61BC21D3F0088F215 /* InputView.m in Sources */,
 			);
