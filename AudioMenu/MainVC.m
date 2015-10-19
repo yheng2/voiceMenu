@@ -7,6 +7,7 @@
 //
 
 #import "MainVC.h"
+#import "UIViewController+AMSlideMenu.h"
 
 @interface MainVC ()
 
@@ -17,28 +18,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self disableSlidePanGestureForRightMenu];
 }
 
+-(int)isFirstTime{
+    NSUserDefaults *theDefaults = [NSUserDefaults standardUserDefaults];
+    if([theDefaults integerForKey:@"hasRun"] == 0) {
+        [theDefaults setInteger:1 forKey:@"hasRun"];
+        [theDefaults synchronize];
+        return 0;
+    }
+    return 1;
+    
+}
 
-//-(int)isFirstTime{
-//    NSUserDefaults *theDefaults = [NSUserDefaults standardUserDefaults];
-//    if([theDefaults integerForKey:@"hasRun"] == 0) {
-//        [theDefaults setInteger:1 forKey:@"hasRun"];
-//        [theDefaults synchronize];
-//        return 0;
-//    }
-//    return 1;
-//
-//}
-//
-//-(void)viewDidAppear:(BOOL)animated{
-//    int result;
-//    result=[self isFirstTime];
-//    NSLog(@"licence: %d",result);
-//    if (result==0) {
-//        [self performSegueWithIdentifier:@"licenceSegue" sender:self];
-//    }
-//}
+-(void)viewDidAppear:(BOOL)animated{
+    int result;
+    result=[self isFirstTime];
+    NSLog(@"licence: %d",result);
+    if (result==0) {
+        [self performSegueWithIdentifier:@"licenceSegue" sender:self];
+    }
+}
 
 - (NSString *)segueIdentifierForIndexPathInLeftMenu:(NSIndexPath *)indexPath{
     
@@ -67,7 +68,7 @@
     frame.size = (CGSize){40,40};
     button.frame = frame;
     
-    
+    [button setImage:[UIImage imageNamed:@"icon-menu"] forState:UIControlStateNormal];
     
 }
 
@@ -98,6 +99,12 @@
 - (CGFloat) rightMenuWidth
 {
     return 100;
+}
+
+
+- (BOOL)deepnessForLeftMenu
+{
+    return YES;
 }
 
 

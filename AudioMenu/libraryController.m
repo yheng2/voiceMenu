@@ -8,6 +8,7 @@
 
 #import "libraryController.h"
 #import "Voice+CoreDataProperties.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface libraryController ()
 
@@ -19,8 +20,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    CALayer *layer=self.resultTable.layer;
+    //self.resultTable.layer.borderWidth=2.0;
+    [layer setMasksToBounds:YES];
+    [layer setCornerRadius:20.0];
+    [layer setBorderWidth:5.0];
     
+    int i = arc4random()%4;
+    if (i==0) {
+        [layer setBorderColor:[[UIColor colorWithRed:0.6 green:0.0 blue:1.0 alpha:1.0] CGColor]];
+    }
+    else if (i==1) {
+        [layer setBorderColor:[[UIColor colorWithRed:1.0 green:0.6 blue:1.0 alpha:1.0] CGColor]];
+    }
+    else if (i==2) {
+        [layer setBorderColor:[[UIColor colorWithRed:0.0 green:1.0 blue:0.6 alpha:1.0] CGColor]];
+    }
+    else if (i==3) {
+        [layer setBorderColor:[[UIColor colorWithRed:1.0 green:0.0 blue:1.0 alpha:1.0] CGColor]];
+    }
     
+        
     AppDelegate *appDelegate=[[UIApplication sharedApplication] delegate];
     self.context=[appDelegate managedObjectContext];
     

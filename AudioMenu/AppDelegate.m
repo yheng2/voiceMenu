@@ -17,6 +17,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    
+    int i = arc4random()%4;
+    NSLog(@"%d", i);
+    
+    if (i==0) {
+        [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xFF3333)];
+    }
+    else if (i ==1 ){
+        [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x74FFB5)];
+    }
+    else if (i ==2 ){
+        [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x747AFF)];
+    }
+    else if (i ==3 ){
+        [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0xCC00CC)];
+    }
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     return YES;
 }
 

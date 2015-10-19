@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "14142B2DC275BC88D11841CCC858E90CD85A440A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "16031A2EE8EF09C6614164C414028AED67DAA9EF" : 0,
+    "14142B2DC275BC88D11841CCC858E90CD85A440A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B812F039-4D67-480D-8E67-CC8DE3F6F94C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "16031A2EE8EF09C6614164C414028AED67DAA9EF" : "..\/..\/AMSlideMenu",
+    "14142B2DC275BC88D11841CCC858E90CD85A440A" : "voiceA_10_17_630\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AudioMenu",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AudioMenu.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yheng2\/voiceMenu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14142B2DC275BC88D11841CCC858E90CD85A440A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SocialObjects-Software\/AMSlideMenu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "16031A2EE8EF09C6614164C414028AED67DAA9EF"
+    }
+  ]
+}

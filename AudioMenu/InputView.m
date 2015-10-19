@@ -160,16 +160,19 @@
     voi.nameNumber=[NSString stringWithFormat:@"%d",self.i];
     NSError *error;
     [self.context save:&error];
-}
-
-- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Done"
-                                                    message: @"Finish playing the recording!"
-                                                   delegate: nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
+    
+    UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Done" message:@"Finish input your voice" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
 }
+
+//- (void) audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Done"
+//                                                    message: @"Finish playing the recording!"
+//                                                   delegate: nil
+//                                          cancelButtonTitle:@"OK"
+//                                          otherButtonTitles:nil];
+//    [alert show];
+//}
 - (IBAction)okTapped:(id)sender {
     self.inputLabel.text=self.inputText.text;
     self.inputText.text=@"";
